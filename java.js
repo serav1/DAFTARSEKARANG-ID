@@ -37,8 +37,8 @@ function validateMalaysiaPhone(input) {
   input.value = input.value.replace(/\D/g, "");
 
   // Pastikan nomor diawali dengan "60" (tanpa +)
-  if (!input.value.startsWith("60")) {
-    input.value = "60"; // Memastikan selalu diawali dengan kode Malaysia
+  if (!input.value.startsWith("62")) {
+    input.value = "62"; // Memastikan selalu diawali dengan kode Malaysia
   }
 
   // Batasi panjang nomor setelah +60 agar total 13 karakter maksimal
@@ -325,3 +325,4 @@ function startAutoScroll() {
 
 // Panggil fungsi saat dokumen dimuat
 document.addEventListener("DOMContentLoaded", startAutoScroll);
+
